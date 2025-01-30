@@ -1,5 +1,5 @@
 import { describe, expect, test, it } from "vitest";
-import greater from "../src/index.js";
+import greater, { factorial } from "../src/index.js";
 import { fizzBuzz } from "../src/index.js";
 
 describe("greater", () => {
@@ -24,5 +24,20 @@ describe("fizzbuzz", () => {
   });
   it("should return buzz if n is divisible by 5 ", () => {
     expect(fizzBuzz(5)).toBe("buzz");
+  });
+  it("should return n as a string if n is indivisible by 5 and 3 ", () => {
+    expect(fizzBuzz(7)).toBe("7");
+  });
+});
+
+describe("factorial", () => {
+  it("should return the factorial of the number", () => {
+    expect(factorial(0)).toBe(1);
+  });
+  it("should return the factorial of the number", () => {
+    expect(factorial(1)).toBe(1);
+  });
+  it("should return the factorial of the number", () => {
+    expect(factorial(3)).toBe(6);
   });
 });
