@@ -15,4 +15,14 @@ describe("greater", () => {
   });
 });
 
-
+describe("fizzbuzz", () => {
+  it("should return fizzbuzz if n is divisible by 3 and 5", () => {
+    expect(fizzBuzz(15)).toBe("fizzbuzz");
+  });
+  it("should return fizz if n is divisible by 3 ", () => {
+    expect(fizzBuzz(3)).toBe("fizz");
+  });
+  it("should return buzz if n is divisible by 5 ", () => {
+    expect(fizzBuzz(5)).toBe("buzz");
+  });
+});
