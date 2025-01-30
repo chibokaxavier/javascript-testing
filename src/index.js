@@ -1,7 +1,5 @@
-const greater = (a,b) => {
-  if (a > b) return a;
-  else if (b > a) return b;
-  return a;
+const greater = (a, b) => {
+  return a > b ? a : b;
 };
 
 export default greater;
