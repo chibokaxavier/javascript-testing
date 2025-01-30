@@ -1,5 +1,6 @@
 import { describe, expect, test, it } from "vitest";
 import greater from "../src/index.js";
+import { fizzBuzz } from "../src/index.js";
 
 describe("greater", () => {
   it("should return the first argument if it is bigger", () => {
@@ -13,3 +14,5 @@ describe("greater", () => {
     expect(greater(3, 3)).toBe(3);
   });
 });
+
+
